@@ -4,6 +4,8 @@ import MovieCardComponent from './components/movie-card-component.jsx';
 import ChooseActorCardComponent from './components/choose-actor-card-component.jsx';
 import React from 'react';
 
+require("../styles/app.less");
+
 let actor1Component = <ChooseActorCardComponent/>;
 React.render(actor1Component, document.getElementById('actor1'));
 

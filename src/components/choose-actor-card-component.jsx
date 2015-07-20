@@ -1,7 +1,9 @@
 
 import DefaultCardComponent from './default-card-component.jsx';
 import React from 'react';
+import Radium from 'radium'
 
+@Radium
 export default class ChooseActorCardComponent extends DefaultCardComponent {
 	constructor(props) {
 		super(props);

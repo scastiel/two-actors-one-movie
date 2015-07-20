@@ -4,21 +4,31 @@
   "description": "Two actors one movie",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "mkdir -p dist ; cp -r public/* dist ; ./node_modules/.bin/lessc styles/app.less dist/app.css ; ./node_modules/.bin/browserify -t babelify node_modules/material-design-lite/material.min.js src/app.jsx --outfile dist/app.js",
-    "watch": "./node_modules/.bin/nodemon --watch ./public --watch ./src --watch ./styles --ext js,jsx,css,less,html --exec 'npm run build'",
+    "build": "node_modules/.bin/webpack --progress --colors",
+    "watch": "node_modules/.bin/webpack --progress --colors --watch",
     "start": "./node_modules/.bin/http-server dist"
   },
   "author": "Sébastien Castiel <sebastien.castiel@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "material-design-lite": "^1.0.0-3",
-    "react": "^0.13.3"
+    "radium": "^0.13.4",
+    "react": "^0.13.3",
+    "transfer-webpack-plugin": "^0.1.2"
   },
   "devDependencies": {
+    "babel-core": "^5.7.4",
+    "babel-loader": "^5.3.2",
     "babelify": "^6.1.3",
     "browserify": "^11.0.0",
+    "css-loader": "^0.15.5",
     "http-server": "^0.8.0",
+    "jsx-loader": "^0.13.2",
     "less": "^2.5.1",
-    "nodemon": "^1.3.7"
+    "less-loader": "^2.2.0",
+    "node-libs-browser": "^0.5.2",
+    "nodemon": "^1.3.7",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.10.1"
   }
 }
