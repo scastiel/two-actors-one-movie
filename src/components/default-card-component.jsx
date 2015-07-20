@@ -10,9 +10,9 @@ export default class DefaultCardComponent extends Component {
 		this.styles = {
 			card: { width: '100%' },
 			title: {
-				height: '52px',
+				height: 'auto',
 				padding: '16px',
-				backgroundColor: 'rgba(0, 0, 0, 0.5)',
+				backgroundColor: 'rgba(0, 0, 0, 0.75)',
 				color: '#fff',
 				textAlign: 'center'
 			}

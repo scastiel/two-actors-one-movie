@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "delorean": "^0.9.4",
+    "lodash": "^3.10.0",
     "material-design-lite": "^1.0.0-3",
     "radium": "^0.13.4",
     "react": "^0.13.3",

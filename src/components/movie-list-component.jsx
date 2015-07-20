@@ -7,7 +7,7 @@ export default class MovieListComponent extends Component {
 		return (
 			<div className="mdl-grid">
 				{this.props.movies.map((movie, i) => (
-					<div className="mdl-cell mdl-cell--12-col mdl-cell--center" key={i}>
+					<div className="mdl-cell--center" key={i}>
 						<MovieCardComponent {...movie}/>
 					</div>
 				))}
