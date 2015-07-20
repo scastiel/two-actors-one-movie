@@ -11,9 +11,7 @@ export default class AppComponent extends Component {
 					<SearchFormComponent actor1={this.props.actors[0]} actor2={this.props.actors[1]}/>
 				</div>
 				<div className="mdl-cell mdl-cell--12-col">
-					<MovieListComponent movies={[
-						{ name: "Interview with a vampire", year: 1994, posterImageUrl: "//image.tmdb.org/t/p/original/hldXwwViSfHJS0kIJr07KBGmHJI.jpg" }
-					]}/>
+					<MovieListComponent movies={this.props.movies}/>
 				</div>
 			</div>
 		);
