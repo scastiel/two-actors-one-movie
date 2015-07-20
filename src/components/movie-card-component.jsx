@@ -1,7 +1,7 @@
 
 import DefaultCardComponent from './default-card-component.jsx';
 import React from 'react';
-import Radium from 'radium'
+import Radium from 'radium';
 
 @Radium
 export default class MovieCardComponent extends DefaultCardComponent {
