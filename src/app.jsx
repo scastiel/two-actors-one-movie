@@ -22,5 +22,5 @@ setTimeout(function() {
 }, 1000);
 
 setTimeout(function() {
-	ActorsActions.setActor(1, { name: "Brad Pitt", profileImageUrl: "//image.tmdb.org/t/p/original/ejYIW1enUcGJ9GS3Bs34mtONwWS.jpg" });
+	ActorsActions.setActor(1, { name: "Simon Pegg", profileImageUrl: "//image.tmdb.org/t/p/original/onE8N8YciZtSO8hv8TBA6fRpB5b.jpg" });
 }, 2000);
