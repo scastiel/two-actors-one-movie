@@ -8,7 +8,7 @@ export default class AppComponent extends Component {
 		return (
 			<div className="main-container mdl-grid">
 				<div className="mdl-cell mdl-cell--12-col">
-					<SearchFormComponent/>
+					<SearchFormComponent actor1={this.props.actors[0]} actor2={this.props.actors[1]}/>
 				</div>
 				<div className="mdl-cell mdl-cell--12-col">
 					<MovieListComponent movies={[
