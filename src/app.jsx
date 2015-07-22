@@ -7,6 +7,7 @@ import MoviesActions from './actions/movies-actions';
 
 import React from 'react';
 
+require("../node_modules/material-design-lite/material.js");
 require("../styles/app.less");
 
 function render() {
@@ -18,9 +19,9 @@ ActorsStore.onChange(render);
 MoviesStore.onChange(render);
 
 // setTimeout(function() {
-	ActorsActions.setActor(0, { name: "Tom Cruise", profileImageUrl: "//image.tmdb.org/t/p/w396/3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg" });
+	//ActorsActions.setActor(0, { name: "Tom Cruise", profileImageUrl: "//image.tmdb.org/t/p/w396/3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg" });
 // }, 1000);
 
 // setTimeout(function() {
-	ActorsActions.setActor(1, { name: "Simon Pegg", profileImageUrl: "//image.tmdb.org/t/p/original/onE8N8YciZtSO8hv8TBA6fRpB5b.jpg" });
+	//ActorsActions.setActor(1, { name: "Simon Pegg", profileImageUrl: "//image.tmdb.org/t/p/original/onE8N8YciZtSO8hv8TBA6fRpB5b.jpg" });
 // }, 2000);

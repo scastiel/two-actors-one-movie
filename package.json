@@ -16,6 +16,7 @@
     "material-design-lite": "^1.0.0-3",
     "radium": "^0.13.4",
     "react": "^0.13.3",
+    "react-typeahead": "^1.1.1",
     "transfer-webpack-plugin": "^0.1.2"
   },
   "devDependencies": {

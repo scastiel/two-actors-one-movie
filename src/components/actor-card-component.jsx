@@ -7,6 +7,11 @@ import Radium from 'radium'
 export default class ActorCardComponent extends DefaultCardComponent {
 	constructor(props) {
 		super(props);
+		this.styles = _.merge(this.styles, {
+			card: {
+				minHeight: '200px'
+			}
+		});
 	}
 	render() {
 		this.styles.card.background = "url('" + this.props.profileImageUrl + "') center / cover";

@@ -9,10 +9,10 @@ export default class SearchFormComponent extends Component {
 		return (
 			<div className="mdl-grid">
 				<div className="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--center">
-					{ this.props.actor1 ? <ActorCardComponent {...this.props.actor1}/> : <ChooseActorCardComponent/> }
+					{ this.props.actor1 ? <ActorCardComponent {...this.props.actor1}/> : <ChooseActorCardComponent actorIndex={0}/> }
 				</div>
 				<div className="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--center">
-					{ this.props.actor2 ? <ActorCardComponent {...this.props.actor2}/> : <ChooseActorCardComponent/> }
+					{ this.props.actor2 ? <ActorCardComponent {...this.props.actor2}/> : <ChooseActorCardComponent actorIndex={1}/> }
 				</div>
 				<div className="mdl-cell mdl-cell--12-col mdl-cell--center">
 					<SearchButtonComponent/>

@@ -8,7 +8,10 @@ export default class DefaultCardComponent extends Component {
 	constructor(props) {
 		super(props);
 		this.styles = {
-			card: { width: '100%' },
+			card: {
+				width: '100%',
+				minHeight: 0
+			},
 			title: {
 				height: 'auto',
 				padding: '16px',
